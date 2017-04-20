@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mag_detail_common_padding" >
+
+        <ImageView
+            android:id="@+id/at_mag_icon_iv"
+            android:layout_width="@dimen/mag_width_large"
+            android:layout_height="@dimen/mag_height_large"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/public_normal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dooland_default_image" />
+
+        <TextView
+            android:id="@+id/at_mag_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/public_xxsmall"
+            android:layout_alignTop="@+id/at_mag_icon_iv"
+            android:layout_toRightOf="@+id/at_mag_icon_iv"
+            android:singleLine="true"
+            android:textColor="#5f6366"
+            android:textSize="@dimen/tv_size_normal" />
+
+        <TextView
+            android:id="@+id/at_mag_pubdate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/at_mag_name_tv"
+            android:layout_toRightOf="@+id/at_mag_icon_iv"
+            android:singleLine="true"
+            android:textColor="#5f6366"
+            android:textSize="@dimen/tv_size_normal" />
+
+        <TextView
+            android:id="@+id/at_mag_online_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/at_mag_add_local_tv"
+            android:layout_marginBottom="@dimen/public_small"
+            android:layout_marginRight="@dimen/public_xsmall"
+            android:layout_toRightOf="@+id/at_mag_icon_iv"
+            android:background="@color/green"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/public_xxsmall"
+            android:paddingLeft="@dimen/public_xsmall"
+            android:paddingRight="@dimen/public_xsmall"
+            android:paddingTop="@dimen/public_xxsmall"
+            android:text="原版在线阅读"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_xsmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/at_mag_article_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/at_mag_add_local_tv"
+            android:layout_marginBottom="@dimen/public_small"
+            android:layout_toRightOf="@+id/at_mag_online_tv"
+            android:background="@color/green"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/public_xxsmall"
+            android:paddingLeft="@dimen/public_xsmall"
+            android:paddingRight="@dimen/public_xsmall"
+            android:paddingTop="@dimen/public_xxsmall"
+            android:text="图文在线阅读"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_xsmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/at_mag_add_local_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/at_mag_icon_iv"
+            android:layout_toRightOf="@+id/at_mag_icon_iv"
+            android:background="@color/green"
+            android:clickable="true"
+            android:layout_marginRight="@dimen/public_xsmall"
+            android:onClick="onClick"
+            android:layout_marginBottom="@dimen/public_xxsmall"
+            android:paddingBottom="@dimen/public_xxsmall"
+            android:paddingLeft="@dimen/public_xsmall"
+            android:paddingRight="@dimen/public_xsmall"
+            android:paddingTop="@dimen/public_xxsmall"
+            android:text="@string/btn_add_local"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_xsmall" />
+        <TextView
+            android:id="@+id/at_tuwen_add_local_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/at_mag_icon_iv"
+            android:layout_toRightOf="@+id/at_mag_add_local_tv"
+            android:background="@color/green"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/public_xxsmall"
+            android:paddingBottom="@dimen/public_xxsmall"
+            android:paddingLeft="@dimen/public_xsmall"
+            android:paddingRight="@dimen/public_xsmall"
+            android:paddingTop="@dimen/public_xxsmall"
+            android:text="图文版下载"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_xsmall" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/at_mag_icon_iv"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@drawable/dooland_btn_colect_selector"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_below="@+id/topRl"
+        android:background="@color/background_tab_pressed" />
+
+    <com.dooland.common.view.HeaderGridView
+        android:id="@+id/at_mag_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineV"
+        android:cacheColorHint="#00000000"
+        android:numColumns="3" />
+
+</RelativeLayout>

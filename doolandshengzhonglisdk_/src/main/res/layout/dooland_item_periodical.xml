@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_margin="@dimen/public_normal"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/public_xsmall"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_marginLeft="@dimen/public_normal"
+            android:layout_marginTop="@dimen/public_normal"
+            android:layout_marginRight="@dimen/public_normal"
+            android:id="@+id/item_periodical_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+             />
+
+        <TextView
+            android:id="@+id/item_periodical_tv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_periodical_iv"
+            android:layout_below="@+id/item_periodical_iv"
+            android:layout_alignRight="@+id/item_periodical_iv"
+            android:layout_marginTop="@dimen/public_xxsmall"
+            android:text="世界乒乓球 14年第8期"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_size_xsmall" />
+        <CheckBox 
+            android:id="@+id/item_periodical_cb"
+            android:layout_alignTop="@+id/item_periodical_iv"
+            android:layout_alignRight="@+id/item_periodical_iv"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="-10dp"
+            android:button="@drawable/dooland_background_checkbox"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

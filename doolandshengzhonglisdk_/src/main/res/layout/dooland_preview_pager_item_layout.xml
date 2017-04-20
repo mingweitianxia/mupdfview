@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_pager_main_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <com.dooland.view.mupdf.PDFPreviewView
+        android:id="@+id/preview_pager_bm_pv"
+        android:layout_width="@dimen/page_preview_size"
+        android:layout_height="@dimen/page_preview_size"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:id="@+id/preview_pager_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

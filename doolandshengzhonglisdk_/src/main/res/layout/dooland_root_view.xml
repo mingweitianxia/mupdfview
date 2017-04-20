@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dooland_app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titleLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/public_normal"
+        android:paddingRight="@dimen/public_normal" >
+
+        <ImageView
+            android:id="@+id/leftIv"
+            android:layout_width="@dimen/title_back_wh"
+            android:layout_height="@dimen/title_back_wh"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dooland_back" />
+
+        <TextView
+            android:id="@+id/middleTv"
+            android:layout_toLeftOf="@+id/rightTv"
+            android:layout_toRightOf="@+id/leftIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_size_large" />
+
+        <TextView
+            android:id="@+id/rightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_size_large" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/parantLl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleLl"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/at_base_pb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminateDrawable="@drawable/dooland_loading_progressbar"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

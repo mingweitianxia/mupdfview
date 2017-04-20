@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--         android:visibility="invisible" -->
+    <ListView
+        android:id="@+id/at_search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000" />
+
+    <TextView
+        android:id="@+id/at_search_empty_tv"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/article_tag_color"
+        android:text="未找到相关内容"
+        android:textSize="@dimen/tv_size_small"
+        android:visibility="gone"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_searchhistory_h" >
+
+        <TextView
+            android:id="@+id/pop_search_tv"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="时尚先生"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/tv_size_small"
+            android:layout_toLeftOf="@+id/pop_delete_iv"
+            android:layout_marginLeft="@dimen/public_large"
+            android:layout_marginBottom="@dimen/public_xxsmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray" />
+        <ImageView 
+            android:id="@+id/pop_delete_iv"
+            android:layout_width="@dimen/main_item_searchhistory_img_wh"
+            android:layout_height="@dimen/main_item_searchhistory_img_wh"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/public_xlarge"
+            android:src="@drawable/dooland_search_list_delete"/>
+
+        <View
+            android:id="@+id/pop_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

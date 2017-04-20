@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/public_small" >
+
+        <TextView
+            android:id="@+id/list_item_rank_num_tv"
+            android:layout_width="@dimen/rank_item_count_tv_w"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/public_normal"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tv_size_small" />
+
+        <ImageView
+            android:id="@+id/list_item_rank_iv"
+            android:layout_width="@dimen/mag_width_small"
+            android:layout_height="@dimen/mag_height_small"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/list_item_rank_num_tv"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/list_item_rank_intro_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="@+id/list_item_rank_iv"
+            android:layout_marginTop="@dimen/public_large"
+            android:layout_toRightOf="@+id/list_item_rank_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="XXXXXXXXXX"
+            android:textSize="@dimen/tv_size_normal" />
+
+        <TextView
+            android:id="@+id/list_item_rank_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_item_rank_intro_tv"
+            android:layout_marginTop="@dimen/public_xsmall"
+            android:layout_toRightOf="@+id/list_item_rank_iv"
+            android:ellipsize="end"
+            android:text="XXXXXX"
+            android:textSize="@dimen/tv_size_xsmall" />
+    </RelativeLayout>
+
+</LinearLayout>

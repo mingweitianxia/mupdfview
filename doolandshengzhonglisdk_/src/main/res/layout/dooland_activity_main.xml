@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dooland_app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_editext_height"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/dooland_icon_search"
+            android:drawablePadding="@dimen/common_padding"
+            android:hint="@string/search_hint"
+            android:imeActionLabel="Search"
+            android:maxLength="15"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="@dimen/common_padding" />
+
+        <ImageView
+            android:id="@+id/at_main_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/public_normal"
+            android:src="@drawable/dooland_search_delete" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.dooland.common.view.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/dooland_background_tab"
+            tab:tabTextSize="@dimen/tabTextSize" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpage"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabs" />
+
+        <LinearLayout
+            android:id="@+id/at_main_search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dooland_app_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/at_main_clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="clearHistorySearch"
+                android:text="@string/clear_search_history" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

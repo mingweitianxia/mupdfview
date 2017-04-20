@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/parentLl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/fr_category_margin_lr"
+        android:layout_marginRight="@dimen/fr_category_margin_lr"
+        android:layout_marginTop="@dimen/fr_category_margin_t"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/fm_category_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/fashonIv"
+                    android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/fashonTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_fashonlive" />
+
+                <TextView
+                    android:id="@+id/fashonTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/feshonLive"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="#dad2cf" />
+
+            <RelativeLayout
+                android:id="@+id/fm_category_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/sportIv"
+                   android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/sportTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_sport" />
+
+                <TextView
+                    android:id="@+id/sportTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/sport"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="#dad2cf" />
+
+            <RelativeLayout
+                android:id="@+id/fm_category_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/businessIv"
+                    android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/businessTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_business" />
+
+                <TextView
+                    android:id="@+id/businessTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/business"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="#dad2cf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/fm_category_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/xiuxianIv"
+                    android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/xiuxianTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_xiuxian" />
+
+                <TextView
+                    android:id="@+id/xiuxianTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/xiuxian"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="#dad2cf" />
+
+            <RelativeLayout
+                android:id="@+id/fm_category_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/educateIv"
+                   android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/educateTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_educate" />
+
+                <TextView
+                    android:id="@+id/educateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/educate"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="#dad2cf" />
+
+            <RelativeLayout
+                android:id="@+id/fm_category_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/newsIv"
+                    android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/newsTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_news_people" />
+
+                <TextView
+                    android:id="@+id/newsTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/newsperson"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="#dad2cf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="#dad2cf" />
+
+            <RelativeLayout
+                android:id="@+id/fm_category_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:id="@+id/wenhuaIv"
+                    android:layout_width="@dimen/category_img_wh"
+                    android:layout_height="@dimen/category_img_wh"
+                    android:layout_above="@+id/wenhuaTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    android:src="@drawable/dooland_wenyi" />
+
+                <TextView
+                    android:id="@+id/wenhuaTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/category_img_padding_bottom"
+                    
+                    android:gravity="center"
+                    android:text="@string/wenhua"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/tv_size_xsmall" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="#dad2cf" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

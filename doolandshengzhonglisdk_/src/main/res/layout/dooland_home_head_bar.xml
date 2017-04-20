@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#4cc1d2"
+    android:gravity="center_vertical"
+    android:padding="4dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/common_head_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:onClick="back"
+        android:src="@drawable/dooland_btn_back_white"
+         />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/common_head_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="@string/web_title"
+        android:textSize="@dimen/tv_size_large" />
+    
+    
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="local"
+        android:textColor="@color/white"
+        android:text="期刊架"
+         />
+
+</RelativeLayout>

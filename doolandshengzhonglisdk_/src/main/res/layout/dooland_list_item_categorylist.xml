@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/public_xlarge"
+        android:paddingRight="@dimen/public_xlarge"
+        android:paddingTop="@dimen/public_xsmall"
+        android:paddingBottom="@dimen/public_xsmall"
+        
+         >
+
+        <ImageView
+            android:id="@+id/list_item_rank_iv"
+            android:layout_width="@dimen/mag_width_small"
+            android:layout_height="@dimen/mag_height_small"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/list_item_rank_intro_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/list_item_rank_iv"
+            android:layout_alignTop="@+id/list_item_rank_iv"
+            android:layout_marginTop="@dimen/public_large"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服饰与美容"
+            android:textSize="@dimen/tv_size_small" />
+
+        <TextView
+            android:id="@+id/list_item_rank_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/list_item_rank_intro_tv"
+            android:layout_below="@+id/list_item_rank_intro_tv"
+            android:layout_marginTop="@dimen/public_xsmall"
+            android:layout_toRightOf="@+id/list_item_rank_iv"
+            android:ellipsize="end"
+            android:text="2014年3月"
+            android:textSize="@dimen/tv_size_xsmall" />
+    </RelativeLayout>
+
+</LinearLayout>

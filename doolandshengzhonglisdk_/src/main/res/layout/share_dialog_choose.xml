@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dip"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/commondialog_title_layout"
+        android:layout_width="280dip"
+        android:layout_height="45dip"
+        android:background="@color/share_common_red_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dip"
+            android:text="分享到"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+        
+        <ImageView
+            android:id="@+id/dialog_share_choose_close_iv"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_del"/>
+    </RelativeLayout>
+
+    <com.dooland.share_library.ShareMyGridView
+        android:id="@+id/dialog_share_choose_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:numColumns="2"
+        android:verticalSpacing="20dip"
+        android:cacheColorHint="@android:color/transparent" />
+
+</LinearLayout>

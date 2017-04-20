@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+	
+    <RelativeLayout 
+        android:id="@+id/commondialog_title_layout"
+       	android:layout_width="280dip"
+       	android:background="@color/green"
+   		android:layout_height="45dip">
+    	<TextView 
+	        android:text="提  示"
+	        android:textSize="17sp"
+	        android:layout_centerInParent="true"
+	        android:layout_marginLeft="5dip"
+	        android:textColor="@color/white"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"/>	
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/commondialog_tipmsg"
+        android:layout_below="@id/commondialog_title_layout"
+        android:gravity="center"
+        android:padding="5dip"
+        android:textColor="@color/green"
+        android:minHeight="80dip"
+        android:textSize="@dimen/tv_size_normal"
+        android:layout_width="280dip"
+    	android:layout_height="wrap_content"/>
+    
+   	<RelativeLayout 
+       	android:layout_below="@id/commondialog_tipmsg"
+       	android:paddingBottom="20dip"
+       	android:layout_width="280dip"
+   		android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/commondialog_ok"
+            android:layout_width="90dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+			android:layout_marginRight="30dip"
+            android:background="@drawable/dooland_corner_green"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    	<Button 
+	        android:id="@+id/commondialog_cancel"
+			android:textColor="@color/white"
+            android:layout_marginLeft="30dip"
+			android:text="取消"
+			android:background="@drawable/dooland_corner_grag"
+			android:textSize="16sp"
+	        android:layout_width="90dip"
+	    	android:layout_height="40dip"/>
+   	</RelativeLayout>
+   
+    
+</RelativeLayout>

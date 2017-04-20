@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <com.dooland.pull.view.PullToRefreshView
+        android:id="@+id/pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dooland_refresh_header_view" />
+
+        <com.dooland.pull.view.MyLoadMoreGridView
+            android:id="@+id/fm_recommend_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:numColumns="3"
+            android:paddingLeft="@dimen/public_normal"
+            android:paddingRight="@dimen/public_normal" />
+    </com.dooland.pull.view.PullToRefreshView>
+
+</LinearLayout>

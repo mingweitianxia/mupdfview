@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:indeterminateDrawable="@drawable/dooland_loading_progressbar"
+        android:visibility="visible" />
+
+</RelativeLayout>

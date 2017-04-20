@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/public_normal"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/mImgView"
+            android:layout_width="@dimen/artcle_item_img_width"
+            android:layout_height="@dimen/artcle_item_img_height"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/public_normal"
+            android:layout_marginTop="@dimen/public_normal"
+            android:layout_marginBottom="@dimen/public_normal"
+            />
+
+        <LinearLayout
+            android:layout_margin="@dimen/public_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/mImgView"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/introTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="XXXXXXXX"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/tv_size_small" />
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_marginTop="@dimen/artcle_item_tv_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/tv_size_xsmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

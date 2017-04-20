@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#bb191919"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/view_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="按下载时间"
+            android:paddingLeft="@dimen/public_small"
+            android:paddingRight="@dimen/public_small"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_small" />
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"/>
+        
+        <TextView
+            android:id="@+id/view_yuedu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="按阅读时间"
+             android:paddingLeft="@dimen/public_small"
+            android:paddingRight="@dimen/public_small"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_small" />
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/view_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="按书名"
+             android:paddingLeft="@dimen/public_small"
+            android:paddingRight="@dimen/public_small"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_small" />
+
+    </LinearLayout>
+
+</LinearLayout>

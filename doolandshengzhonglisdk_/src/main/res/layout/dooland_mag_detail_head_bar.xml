@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/titleLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/public_xsmall"
+        android:paddingRight="@dimen/public_xsmall" >
+
+        <ImageView
+            android:id="@+id/leftIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dooland_back" />
+
+        <TextView
+            android:id="@+id/middleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_size_normal" />
+
+        <TextView
+            android:id="@+id/rightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="@dimen/mag_detail_head_right_tv_max_w"
+            android:minWidth="@dimen/mag_detail_head_right_tv_min_w"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_size_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

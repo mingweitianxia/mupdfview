@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/public_title_height"
+    android:background="@color/green"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/public_xsmall"
+    android:paddingRight="@dimen/public_xsmall" >
+
+    <ImageView
+        android:id="@+id/at_local_left"
+        android:layout_width="@dimen/title_back_wh"
+        android:layout_height="@dimen/title_back_wh"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:src="@drawable/dooland_back" />
+
+    <TextView
+        android:id="@+id/at_local_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="@string/local_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_large" />
+
+    <TextView
+        android:id="@+id/at_local_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="@dimen/at_local_head_right_max_width"
+        android:minWidth="@dimen/at_local_head_right_min_width"
+        android:onClick="onClick"
+        android:singleLine="true"
+        android:text="@string/edit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_size_normal" />
+
+    <TextView
+        android:id="@+id/at_local_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/common_padding"
+        android:layout_toLeftOf="@+id/at_local_right"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:singleLine="true"
+        android:text="@string/delete"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_size_normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/at_local_paixu_tv"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/public_small"
+        android:layout_toLeftOf="@+id/at_local_second"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="排序"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_size_normal" />
+
+</RelativeLayout>

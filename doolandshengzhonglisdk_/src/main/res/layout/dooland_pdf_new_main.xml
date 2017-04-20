@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pdf_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <com.dooland.common.img.view.MyImageView
+        android:id="@+id/pdf_new_empty_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/pdf_new_main_viewgroup_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/pdf_new_main_menu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/pdf_new_main_top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pdf_top_height"
+            android:background="@color/black"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/pdf_new_main_back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/dooland_back" />
+
+            <TextView
+                android:id="@+id/pdf_new_main_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/pdf_new_main_back_iv"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/pdf_title_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pdf_new_main_outline_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/pdf_new_main_page_tv"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pdf_new_main_page_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pdf_new_main_bottom_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pdf_bottom_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:padding="10dp" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

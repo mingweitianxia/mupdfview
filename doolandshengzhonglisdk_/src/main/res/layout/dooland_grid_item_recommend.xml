@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item_parant_ll"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/public_normal"
+        android:layout_marginBottom="@dimen/public_normal"
+        android:layout_marginLeft="@dimen/mag_margin_lr"
+        android:layout_marginRight="@dimen/mag_margin_lr"
+         >
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="@dimen/mag_width"
+            android:layout_height="@dimen/mag_height"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mImageView"
+            android:layout_below="@+id/mImageView"
+            android:layout_marginTop="@dimen/public_xsmall"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:lines="2"
+            android:paddingRight="@dimen/mag_grid_padding_tv"
+            android:textColor="#5f6366"
+            android:textSize="@dimen/tv_size_small" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mImageView"
+            android:layout_alignRight="@+id/mImageView"
+            android:layout_below="@+id/nameTv"
+            android:layout_marginTop="@dimen/public_xxsmall"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#5f6366"
+            android:textSize="@dimen/tv_size_xxsmall" />
+    </RelativeLayout>
+
+</LinearLayout>

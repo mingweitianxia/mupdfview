@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="white">#FFF</color>
+    <color name="green">#4CC1D2</color>
+    <color name="red_bg">#9C000B</color>
+     <color name="grag">#C5C5CB</color>
+    <color name="black">#000</color>
+    <color name="thumbnail_selected_background">#bba8a8a8</color>
+    
+    <color name="jx_mulu_child_des_color">#8a8a8a</color>
+    <color name="red_press_color">#c63133</color>
+    <color name="article_tag_color">#999999</color>
+    <color name="list_comment_line">#D6D6D6</color>
+    
+    <color name="share_common_red_color">#4CC1D2</color>
+    <color name="share_red_press_color">#4CC1D2</color>
+       <color name="pull_common_red_color">#4CC1D2</color>
+    
+</resources>

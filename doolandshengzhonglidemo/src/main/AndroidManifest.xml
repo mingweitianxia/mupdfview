@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demosdk">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name="com.example.demosdk.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.demosdk.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dooland.doolandbasesdk.MainFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.LocalMagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.CategoryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.MagDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.ArticlesInMagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.ArticleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.doolandbasesdk.OnlineReaderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.reader.mupdf.activity.MuPDFActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.dooland.common.offlinetw.OfflineTwlListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dooland.common.offlinetw.OfflineTwReadActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.dooland.share_library.ShareEditActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="549a2aebfd98c5012e000ad5" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+
+        <!-- 微信分享的id -->
+        <meta-data
+            android:name="weixin_appid"
+            android:value="wxfdd74b33c48bda31" >
+        </meta-data>
+    </application>
+
+</manifest>

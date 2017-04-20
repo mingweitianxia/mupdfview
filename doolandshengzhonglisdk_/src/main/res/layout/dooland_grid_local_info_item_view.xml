@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_local_info_item_mail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_local_ll"
+        android:layout_marginBottom="@dimen/public_normal"
+        android:layout_marginLeft="@dimen/mag_margin_lr"
+        android:layout_marginRight="@dimen/mag_margin_lr"
+        android:layout_marginTop="@dimen/public_normal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/grid_local_info_item_pic_iv"
+                android:layout_width="@dimen/mag_width"
+                android:layout_height="@dimen/mag_height"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dooland_default_image" />
+            <ImageView
+                android:id="@+id/item_pic_twtag_iv"
+                android:layout_alignLeft="@+id/grid_local_info_item_pic_iv"
+                android:layout_alignTop="@+id/grid_local_info_item_pic_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dooland_sign_ic_tw" />
+
+            <ImageView
+                android:id="@+id/grid_local_info_item_check_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/dooland_background_checkbox" />
+
+            <ImageView
+                android:id="@+id/grid_local_info_item_down_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/dooland_iv_download" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/grid_local_info_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/mag_grid_padding_tv"
+            android:paddingRight="@dimen/mag_grid_padding_tv"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size_small" />
+
+        <com.dooland.common.view.TextProgressView
+            android:id="@+id/grid_local_info_item_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
